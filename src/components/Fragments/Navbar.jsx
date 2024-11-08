@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Icon } from "../Elements/Icon"; // Pastikan file dan komponen Icon ada
 import Logo from "../Elements/Logo";
 
@@ -50,7 +51,7 @@ const Navbar = () => {
 
   return (
   <div className = "bg-defaultBlack">
-    <nav className=" text-special-bg2 sm:w-72 w-28 min-h-screen px-7 py-12 flex flex-col justify-between">
+    <nav className="sticky top-0 text-special-bg2 sm:w-72 w-28 min-h-screen px-7 py-12 flex flex-col justify-between">
       <div>
         <NavLink to="/" className="flex justify-center mb-10">
           <Logo variant="text-white text-sm sm:text-2x1" />
